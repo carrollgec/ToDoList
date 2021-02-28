@@ -28,7 +28,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="n6I-dE-kOb" kind="show" identifier=" " id="Jt2-c7-JcQ"/>
+                                            <segue destination="n6I-dE-kOb" kind="show" identifier=" ShowDetail" id="Jt2-c7-JcQ"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -142,7 +142,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="gPO-wg-RZw">
                             <connections>
-                                <action selector="saveButtonPressed:" destination="n6I-dE-kOb" id="Uo1-as-0Mu"/>
+                                <segue destination="EmO-be-iW1" kind="unwind" unwindAction="unwindFromDetailWithSegue:sender:" id="rte-zQ-BAJ"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -154,6 +154,7 @@
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jFW-tS-5ge" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="EmO-be-iW1" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2852" y="91.304347826086968"/>
         </scene>
